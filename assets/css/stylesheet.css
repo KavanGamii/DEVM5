@@ -1,0 +1,784 @@
+:root{
+    --main-green-:#c6ffe0;
+    --light-green-:#13e5c0;
+    --light-black-:#19303d;
+    --black-:#132835;
+}
+
+body{
+    font-family: "IBM Plex Mono", monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ************************************************************************************************************************************ */
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-Bold.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-Bold.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-Bold.ttf') format('ttf');
+
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-ExtraLightItalic.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-ExtraLightItalic.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-ExtraLightItalic.ttf') format('ttf');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-ExtraLight.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-ExtraLight.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-ExtraLight.ttf') format('ttf');
+
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-BoldItalic.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-BoldItalic.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-BoldItalic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-ThinItalic.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-ThinItalic.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-ThinItalic.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-MediumItalic.woff2') format('woff2'),
+     url('/assets/font/IBMPlexMono-MediumItalic.woff') format('woff'),
+     url('/assets/font/IBMPlexMono-MediumItalic.ttf') format('ttf');
+        
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-Thin.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-Thin.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-LightItalic.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-LightItalic.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-LightItalic.ttf') format('ttf');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-SemiBoldItalic.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-SemiBoldItalic.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-SemiBoldItalic.ttf') format('ttf');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-Regular.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-Regular.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-Italic.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-Italic.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-SemiBold.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-SemiBold.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-Light.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-Light.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/assets/font/IBMPlexMono-Medium.woff2') format('woff2'),
+        url('/assets/font/IBMPlexMono-Medium.woff') format('woff'),
+        url('/assets/font/IBMPlexMono-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ************************************************************************************************************************************ */
+
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ************************************************************************************************************************************ */
+
+/*Navigation Bar Start*/
+header{
+    z-index: 1;
+    box-shadow: 0px 0px 1px 0px ;
+    background-color: var(--main-green-);
+    position: sticky;
+    top: 0px;
+
+}
+.nav{
+    display: flex;
+    padding: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navigation ul{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-weight: 500;
+    gap: 36px;
+    font-size: 17.6px;
+} 
+.navigation li:hover{
+    color: var(--light-green-);
+} 
+#button1{
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace ;
+    font-size: 20px;
+    height: 60px;
+    width: 168px;
+    background-color: var(--main-green-);
+    border-style: dashed;
+    border-radius:10px;
+    transition: 0.5s;
+}
+#button1:hover{
+    color: white;
+    background-color: var(--black-);
+    
+}
+#button{
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace ;
+    font-size: 20px;
+    height: 60px;
+    width: 168px;
+    background-color: var(--light-green-);
+    border: transparent;
+    border-radius: 8px;
+}
+#button:hover{
+    color: white;
+    background-color: var(--black-);
+   
+}
+/* Navigation Bar End */
+
+/* ************************************************************************************************************************************ */
+
+/* Hero-section start */
+
+.ourFrame_works{
+    background-color: var(--main-green-);
+    padding-top: 80px;
+}
+.framework{
+    
+    width: 50%;
+}
+.framework button{
+    border-radius: 5px;
+    border-style: dashed;
+    padding: 10px 10px;
+    display: flex;
+    width: 296px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.framework button img{
+    width: 28px; 
+}
+.framework span{
+    font-size: 25px;  
+    font-family: "IBM Plex Mono", monospace ;
+}
+.framework button i{
+    background-color: var(--light-green-);
+    border-radius: 50%;
+    border: 1px dashed black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    justify-content: center;
+    text-align: center;
+}
+   
+.framework p:nth-child(1){
+    font-size: 73px;
+    font-weight: bold;
+}
+.framework p:nth-child(2){
+    font-size: 20px;
+
+}
+.parent_fram{
+    display: flex;
+    padding-bottom: 100px;
+}
+.framimg{
+    width: 50%;
+}
+.framimg img{
+    width: 100%;
+ 
+
+}
+/* Hero-section end */
+
+/* ************************************************************************************************************************************ */
+
+/* Mid Section Start */
+.optimiz_code{
+    padding: 80px 0px;
+}
+.parent_code{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between
+}
+.child_conat img{
+    width: 27%;
+}
+.child_conat{
+    text-align: center;
+    width: 30%;
+}
+.child_conat h3{
+    color: black;
+}
+/* Mid Section End */
+
+/* ************************************************************************************************************************************ */
+
+/* About Start */
+.about_image i{
+    
+    height: 60px;
+    width: 60px;
+    display: flex;
+    font-size: 30px;
+    border: 2px dashed black;
+    justify-content: center;
+    margin: 0px 10px;
+    border-radius: 50%;
+    align-items: center;
+    color: var(--light-green-);
+    text-decoration: underline;
+
+}
+.about_image i:hover{
+    background-color: var(--light-green-) ;
+    color: var(--light-black-);
+
+}
+.about{
+    padding: 80px 0px;
+}
+.aboutus{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+.mainimg_aboutus img{
+    width: 100%;
+}
+
+.aboutimg span:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #d4ceff 65%);
+}
+.aboutimg h3{
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+}
+.about_image{
+    padding-bottom: 20px;
+    display: flex;
+    margin-bottom: 25px;
+}
+.about_image img{
+    
+        width: 39px;
+        border: 1px solid;
+        border-style: dashed;
+        border-radius: 50%;
+    
+}
+.icon_about i {
+    border: 1px solid black;
+    border-style: dashed;
+    background-color: var(--main-green-);
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon_about p{ 
+    gap: 20px;
+    align-items: center;
+    font-weight: 600;  
+    font-size: 17px;
+    display: flex;
+    padding: 0px 10px;
+}
+
+/* About End */
+
+/* ************************************************************************************************************************************ */
+
+/* our Feature Start */
+
+.feature_maindiv h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+}
+.our_features{
+    display: flex;
+    border: 2px solid;
+    border-style: dashed;
+    margin-bottom:20px ;
+}
+.features_image{
+    width: 50%;
+}
+.features_image img{
+    width: 50%;
+    padding: 30px 0px 30px 129px;
+}
+.feature_details{
+    padding: 20px 0px 20px 120px;
+}
+#button3{
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace ;
+    font-size: 20px;
+    height: 60px;
+    width: 168px;
+    background-color: var(--light-green-);
+    border: transparent;
+    border-radius:10px;
+    transition: 0.5s;    
+}
+#button3:hover{
+    color: white;
+    background-color: var(--black-);
+    
+}
+/* our Feature End */
+
+/* ************************************************************************************************************************************ */
+/* Why our Framework Section Start */
+
+.parent_framwork{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.parent_framwork h2{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: 600
+}
+.parent_framwork p{
+    font-size: 20px
+}
+.parent_framwork span{
+    
+    background: linear-gradient(180deg, rgba(255,255,255,0) 55%, var(--light-green-) 80%);
+}
+.child_framework{
+    display: flex;
+    gap: 35px;
+}
+.fram{
+    width: 50%;
+    background-color: var(--light-black-);
+    color: white;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+}
+.frams{
+    width: 50%;
+    
+
+}
+.fram1{
+    border: 2px solid;
+    border-style: dashed;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    
+}
+.frams i{
+    background-color: var(--light-black-);
+    color:white;
+    margin-left: 92%;
+    border-radius: 50%;
+    border: 1px solid;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.frams i:hover{
+    background-color: var(--light-green-);
+}
+.fram2{
+    border: 2px solid;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 20px 20px;
+    
+}
+/* Why our Framework Section End */
+
+/* ************************************************************************************************************************************ */
+
+/* Solutions Section Start */
+.solution{
+    background-color: var(--light-black-);
+    margin-top: 40px;
+}
+.solutions{
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.solutions h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+.solutions p{
+    font-size: 20px;
+    line-height: 34px;
+}
+.solimg img{
+    padding: 40px 0px 60px 0px;
+}
+/* Solutions Section End */
+
+/* ************************************************************************************************************************************ */
+
+/*  Save time with our Framework Start */
+.our_framework{
+    padding-bottom: 60px;
+}
+.our_frameworks h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+.our_frameworks span{
+background: linear-gradient(180deg, rgba(255,255,255,0) 55%, var(--light-green-)50%);
+}
+.child_fram{
+    display: flex;
+    gap: 38px;
+}
+.framework_description{
+    background-color: #f4fcf9;
+    border:1px solid;
+    border-radius: 10px;
+    border-style: dashed;
+    padding: 30px;
+}
+.framework_description h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0px;
+}
+/*  Save time with our Framework End */
+
+/* ************************************************************************************************************************************ */
+
+/* Our Team Section Start */
+.our_team{
+    padding: 80px 0px;
+}
+.small_box{
+    position: relative;
+}
+.short-decs{
+    position: absolute;
+    top: 204px;
+    left: 18px;
+    color: white;
+}
+.short-decs i{
+    position: absolute;
+    top: 20px;
+    left: 166px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    background-color: var(--light-green-);
+}
+
+.short-decs h2{
+    margin: 0px;
+}
+.short-decs p{
+    margin: 0px;
+}
+.our_teams{
+    
+    text-align: center;
+}
+.our_teams h1{
+    font-size: 73px;
+    font-weight: 600;
+    margin: 0px;
+}
+.our_teams p{
+    font-size: 20px;
+}
+
+.team_members{
+    display: flex;
+    gap: 40px;
+    
+}
+.team_members img{
+  
+    max-height: 400px;
+    border: 2px solid;
+    width: 100%;
+    border-radius: 10px;
+    border-style: dashed;
+}
+
+/* Our Team Section End */
+
+/* ************************************************************************************************************************************ */
+
+/* Our Developers Start*/
+.our_developer{
+    padding: 80px 0px;
+}
+#our_developers h2{
+    font-weight: 600;
+    font-size: 27;
+    padding-bottom: 40px;
+}
+.developer_content h3{
+    color: black;
+}
+.developer_content:hover h3{
+    color: rgb(255, 255, 255);
+}
+.developer_content{
+    padding: 0px 20px;
+    background-color: #f4fcf9;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 20px 0px;
+transition: 0.5s;
+
+}
+.developer_content:hover{
+    background-color: var(--light-black-);
+    color: white;
+
+}
+
+.developer_content i {
+    background-color: var(--light-green-);
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+/* Our Developers End*/
+
+/* ************************************************************************************************************************************ */
+
+/* Brand Images Section Start */
+.brandimages{
+    padding: 80px 0px;
+    background-color: var(--main-green-);
+}
+.brands{
+    display: flex;
+    gap: 53px;
+}
+.brands img{
+    width:150px;
+    height: 100px;
+}
+/* Brand Images Section End */
+
+/* ************************************************************************************************************************************ */
+
+/* Joseph_Ranki_Developer Start  */
+.Joseph_Ranki_Developer{
+    padding: 80px 0px;
+}
+.j_r_developer{
+    background-color: var(--light-black-);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+}
+.j_r_developer h2{
+    font-size: 30px;
+}
+.j_r_developer p{
+    font-size: 20px;
+}
+.j_r_developer img{
+    height: 150px;
+    width: 150px;
+    filter: brightness(10);
+}
+.j_r_developer span{
+    color: var(--main-green-);
+    cursor: pointer;
+    transition: 0.7s;  
+}
+.j_r_developer span:hover{
+    color: var(--light-green-);
+
+}
+/* Joseph_Ranki_Developer End */
+
+/* ************************************************************************************************************************************ */
+
+/* Footer Section */
+footer{
+    background-color: var(--light-black-);
+    padding: 50px 0px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--black-);
+
+}
+.footer ul , h3{
+    color: white;
+    line-height: 28px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.footer a:nth-child(1){
+    color: aliceblue;
+
+}
+
+.footer ul li:hover{
+    color: var(--light-green-);
+    
+}
+.footer i{
+    cursor: pointer;
+    text-decoration: none;
+    color: #b9bfc3;
+    padding: 0px 5px 0px 5px;
+}
+.footer i:hover{
+    color: var(--light-green-);
+}
+.copyright{
+    margin: 0%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    background-color: var(--black-);
+}
